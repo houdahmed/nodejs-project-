@@ -6,20 +6,20 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>All Articles Page:</h1>
+    <h1>All Articles Page:122</h1>
     <hr />
 
     <div style="background: orange; color: black; padding: 20px">
-			<% for( let article of allArticles) { %>
+      <% for( let article of allArticles) { %>
 
-			<h1 style="background: blue"><%= article.title %></h1>
+      <h1 style="background: blue"><%= article.title %></h1>
 
-			<h5><%=article.body%></h5>
-			<h5><%=article.numberOfLikes%></h5>
-			<hr />
-			<br />
+      <h5><%=article.body%></h5>
+      <h5><%=article.numberOfLikes%></h5>
+      <hr />
+      <br />
 
-			<% } %>
-		</div>
+      <% } %>
+    </div>
   </body>
 </html>
