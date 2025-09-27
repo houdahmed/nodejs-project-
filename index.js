@@ -28,7 +28,7 @@ app.get("/findSummation/:number1/:number2", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("hello in node js project");
+  res.send("hello in houdaifa node js project");
 });
 
 app.get("/sayhello", (req, res) => {
