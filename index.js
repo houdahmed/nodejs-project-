@@ -27,6 +27,10 @@ app.get("/findSummation/:number1/:number2", (req, res) => {
   res.send(`the total is ${total}`);
 });
 
+app.get("/", (req, res) => {
+  res.send("hello in node js project");
+});
+
 app.get("/sayhello", (req, res) => {
   // console.log(req.body);
 
@@ -122,17 +126,15 @@ app.delete("/articles/:articleId", async (req, res) => {
   }
 });
 
-  app.get("/showArticles", async (req, res) => {
+app.get("/showArticles", async (req, res) => {
   try {
     const articles = await Article.find(); // جلب المقالات من قاعدة البيانات
-    res.render("articles.ejs", { allArticles: articles }); 
+    res.render("articles.ejs", { allArticles: articles });
   } catch (err) {
     console.error(err);
     res.status(500).send("Error fetching articles");
   }
 });
-
-
 
 app.listen(3000, () => {
   console.log("I am listening in port 3000");
