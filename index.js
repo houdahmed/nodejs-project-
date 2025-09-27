@@ -100,7 +100,7 @@ app.get("/articles", async (req, res) => {
     const articles = await Article.find();
     res.send(articles);
   } catch (error) {
-    console.log("error while reading article of id");
+    console.log("error while reading article ");
     return res.send("error");
   }
 
